@@ -1,0 +1,26 @@
+# Build artifacts
+bin/
+obj/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio folder
+.vs/
+
+# ASP.NET scaffolding
+ScaffoldingReadMe.txt
+
+# LibMan cache
+libman.cache
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
