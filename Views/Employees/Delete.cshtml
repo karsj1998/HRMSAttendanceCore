@@ -25,7 +25,7 @@
                     <dd class="col-sm-9">@Model.Department</dd>
                 </dl>
 
-                <form asp-action="Delete" method="post">
+                <form asp-action="Delete" method="post" onsubmit="event.preventDefault(); confirmDelete('#deleteForm');" id="deleteForm">
                     <input type="hidden" asp-for="Id" />
                     <div class="d-flex justify-content-between">
                         <a asp-action="Index" class="btn btn-secondary">
@@ -40,3 +40,21 @@
         </div>
     </div>
 </div>
+
+<script>
+    function confirmDelete(formSelector) {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: 'This action cannot be undone.',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#6c757d',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                document.querySelector(formSelector)?.submit();
+            }
+        });
+    }
+</script>

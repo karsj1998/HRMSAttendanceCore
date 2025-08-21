@@ -175,6 +175,14 @@ body {
   animation: fadeIn 0.5s ease-in-out;
 }
 
+/* Toast container */
+.toast-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1080;
+}
+
 /* Print Styles */
 @media print {
   .navbar,
