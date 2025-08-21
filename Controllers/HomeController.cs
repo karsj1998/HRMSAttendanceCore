@@ -21,12 +21,26 @@ namespace EmployeeAttendance.Controllers
             var todayAttendance = await _attendanceService.GetAllAttendanceAsync();
             
             var today = DateTime.Today;
-            var todayRecords = todayAttendance.Where(a => a.Date.Date == today).ToList();
+            var todayRecords = todayAttendance
+                .Where(a => a.Date.Date == today)
+                .ToList();
+            
+            // Business rules:
+            // - Present includes: "Present", "Late", "Half-day"
+            // - Late is specifically status == "Late"
+            // - Absent = TotalActiveEmployees - Present
+            var presentStatuses = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+            {
+                "Present",
+                "Late",
+                "Half-day"
+            };
             
             ViewBag.TotalEmployees = employees.Count();
-            ViewBag.PresentToday = todayRecords.Count(a => a.Status == "Present");
-            ViewBag.AbsentToday = employees.Count() - todayRecords.Count;
-            ViewBag.LateToday = todayRecords.Count(a => a.Status == "Late");
+            var presentCount = todayRecords.Count(a => presentStatuses.Contains(a.Status ?? string.Empty));
+            ViewBag.PresentToday = presentCount;
+            ViewBag.AbsentToday = employees.Count() - presentCount;
+            ViewBag.LateToday = todayRecords.Count(a => string.Equals(a.Status, "Late", StringComparison.OrdinalIgnoreCase));
             
             return View();
         }
