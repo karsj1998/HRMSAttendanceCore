@@ -1,0 +1,247 @@
+@model IEnumerable<EmployeeAttendance.Models.Attendance>
+
+@{
+    ViewData["Title"] = "Weekly Attendance";
+    var employees = ViewBag.Employees as IEnumerable<EmployeeAttendance.Models.Employee>;
+    var selectedEmployeeId = ViewBag.SelectedEmployeeId;
+    var weekStart = ViewBag.WeekStart;
+    var weekEnd = ViewBag.WeekEnd;
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>
+        <i class="fas fa-calendar-week text-primary me-3"></i>Weekly Attendance
+    </h1>
+    <a asp-action="Create" class="btn btn-primary">
+        <i class="fas fa-plus me-2"></i>Add Attendance
+    </a>
+</div>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <form method="get" class="row g-3">
+            <div class="col-md-4">
+                <label for="employeeId" class="form-label">Select Employee</label>
+                <select name="employeeId" id="employeeId" class="form-select" onchange="this.form.submit()">
+                    @if (employees != null)
+                    {
+                        foreach (var employee in employees)
+                        {
+                            <option value="@employee.Id" @(selectedEmployeeId == employee.Id ? "selected" : "")>
+                                @employee.FullName (@employee.EmployeeId)
+                            </option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="weekStart" class="form-label">Week Starting</label>
+                <input type="date" name="weekStart" id="weekStart" class="form-control" 
+                       value="@(weekStart?.ToString("yyyy-MM-dd"))" onchange="this.form.submit()" />
+            </div>
+            <div class="col-md-4 d-flex align-items-end">
+                <div class="d-flex gap-2">
+                    <button type="button" class="btn btn-outline-secondary" onclick="previousWeek()">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="nextWeek()">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-primary" onclick="currentWeek()">
+                        Current Week
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (selectedEmployeeId != null)
+{
+    var selectedEmployee = employees?.FirstOrDefault(e => e.Id == selectedEmployeeId);
+    if (selectedEmployee != null)
+    {
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-user me-2"></i>@selectedEmployee.FullName - Week of @weekStart?.ToString("MMM dd, yyyy")
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Date</th>
+                                <th>Day</th>
+                                <th>Check In</th>
+                                <th>Check Out</th>
+                                <th>Work Hours</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (var date = weekStart; date <= weekEnd; date = date.AddDays(1))
+                            {
+                                var attendance = Model.FirstOrDefault(a => a.Date.Date == date.Date);
+                                var isWeekend = date.DayOfWeek == DayOfWeek.Saturday || date.DayOfWeek == DayOfWeek.Sunday;
+                                
+                                <tr class="@(isWeekend ? "table-secondary" : "")">
+                                    <td>@date.ToString("MMM dd, yyyy")</td>
+                                    <td>
+                                        <span class="badge @(isWeekend ? "bg-secondary" : "bg-primary")">
+                                            @date.DayOfWeek.ToString().Substring(0, 3)
+                                        </span>
+                                    </td>
+                                    <td>
+                                        @if (attendance?.CheckInTime != null)
+                                        {
+                                            <span class="text-success">
+                                                <i class="fas fa-clock me-1"></i>
+                                                @attendance.CheckInTime.Value.ToString("HH:mm")
+                                            </span>
+                                        }
+                                        else
+                                        {
+                                            <span class="text-muted">-</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (attendance?.CheckOutTime != null)
+                                        {
+                                            <span class="text-info">
+                                                <i class="fas fa-clock me-1"></i>
+                                                @attendance.CheckOutTime.Value.ToString("HH:mm")
+                                            </span>
+                                        }
+                                        else
+                                        {
+                                            <span class="text-muted">-</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (attendance?.WorkHours != null)
+                                        {
+                                            <span class="badge bg-success">
+                                                @attendance.WorkHours.Value.ToString(@"hh\:mm")
+                                            </span>
+                                        }
+                                        else
+                                        {
+                                            <span class="text-muted">-</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (attendance != null)
+                                        {
+                                            var statusClass = attendance.Status switch
+                                            {
+                                                "Present" => "bg-success",
+                                                "Late" => "bg-warning",
+                                                "Absent" => "bg-danger",
+                                                "Half-day" => "bg-info",
+                                                _ => "bg-secondary"
+                                            };
+                                            <span class="badge @statusClass">
+                                                @attendance.Status
+                                            </span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-secondary">No Record</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (attendance != null)
+                                        {
+                                            <div class="btn-group btn-group-sm" role="group">
+                                                <a asp-action="Edit" asp-route-id="@attendance.Id" class="btn btn-outline-warning">
+                                                    <i class="fas fa-edit"></i>
+                                                </a>
+                                                <a asp-action="Delete" asp-route-id="@attendance.Id" class="btn btn-outline-danger">
+                                                    <i class="fas fa-trash"></i>
+                                                </a>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <a asp-action="Create" asp-route-employeeId="@selectedEmployeeId" asp-route-date="@date.ToString("yyyy-MM-dd")" 
+                                               class="btn btn-sm btn-outline-primary">
+                                                <i class="fas fa-plus"></i> Add
+                                            </a>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary Card -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card bg-success text-white">
+                    <div class="card-body text-center">
+                        <h4>@Model.Count(a => a.Status == "Present")</h4>
+                        <small>Present Days</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-warning text-white">
+                    <div class="card-body text-center">
+                        <h4>@Model.Count(a => a.Status == "Late")</h4>
+                        <small>Late Days</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-danger text-white">
+                    <div class="card-body text-center">
+                        <h4>@Model.Count(a => a.Status == "Absent")</h4>
+                        <small>Absent Days</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-info text-white">
+                    <div class="card-body text-center">
+                        <h4>@Model.Where(a => a.WorkHours.HasValue).Sum(a => a.WorkHours.Value.TotalHours).ToString("F1")</h4>
+                        <small>Total Hours</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}
+
+<script>
+    function previousWeek() {
+        const weekStart = document.getElementById('weekStart');
+        const currentDate = new Date(weekStart.value);
+        currentDate.setDate(currentDate.getDate() - 7);
+        weekStart.value = currentDate.toISOString().split('T')[0];
+        weekStart.form.submit();
+    }
+
+    function nextWeek() {
+        const weekStart = document.getElementById('weekStart');
+        const currentDate = new Date(weekStart.value);
+        currentDate.setDate(currentDate.getDate() + 7);
+        weekStart.value = currentDate.toISOString().split('T')[0];
+        weekStart.form.submit();
+    }
+
+    function currentWeek() {
+        const today = new Date();
+        const dayOfWeek = today.getDay();
+        const weekStart = new Date(today);
+        weekStart.setDate(today.getDate() - dayOfWeek);
+        
+        document.getElementById('weekStart').value = weekStart.toISOString().split('T')[0];
+        document.getElementById('weekStart').form.submit();
+    }
+</script>
