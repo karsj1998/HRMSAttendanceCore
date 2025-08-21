@@ -51,6 +51,7 @@ namespace EmployeeAttendance.Controllers
             if (ModelState.IsValid)
             {
                 await _employeeService.CreateEmployeeAsync(employee);
+                TempData["Toast"] = "Employee saved successfully.";
                 return RedirectToAction(nameof(Index));
             }
             return View(employee);
@@ -87,6 +88,7 @@ namespace EmployeeAttendance.Controllers
                 try
                 {
                     await _employeeService.UpdateEmployeeAsync(employee);
+                    TempData["Toast"] = "Employee updated successfully.";
                 }
                 catch
                 {
@@ -130,6 +132,7 @@ namespace EmployeeAttendance.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             await _employeeService.DeleteEmployeeAsync(id);
+            TempData["Toast"] = "Employee deleted.";
             return RedirectToAction(nameof(Index));
         }
     }
