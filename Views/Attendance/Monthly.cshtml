@@ -28,9 +28,18 @@
                     {
                         foreach (var employee in employees)
                         {
-                            <option value="@employee.Id" @(selectedEmployeeId == employee.Id ? "selected" : "")>
-                                @employee.FullName (@employee.EmployeeId)
-                            </option>
+                            if (selectedEmployeeId == employee.Id)
+                            {
+                                <option value="@employee.Id" selected="selected">
+                                    @employee.FullName (@employee.EmployeeId)
+                                </option>
+                            }
+                            else
+                            {
+                                <option value="@employee.Id">
+                                    @employee.FullName (@employee.EmployeeId)
+                                </option>
+                            }
                         }
                     }
                 </select>
@@ -40,9 +49,18 @@
                 <select name="month" id="month" class="form-select" onchange="this.form.submit()">
                     @for (int i = 1; i <= 12; i++)
                     {
-                        <option value="@i" @(month == i ? "selected" : "")>
-                            @System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i)
-                        </option>
+                        if (month == i)
+                        {
+                            <option value="@i" selected="selected">
+                                @System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i)
+                            </option>
+                        }
+                        else
+                        {
+                            <option value="@i">
+                                @System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i)
+                            </option>
+                        }
                     }
                 </select>
             </div>
@@ -51,7 +69,14 @@
                 <select name="year" id="year" class="form-select" onchange="this.form.submit()">
                     @for (int i = DateTime.Now.Year - 2; i <= DateTime.Now.Year + 1; i++)
                     {
-                        <option value="@i" @(year == i ? "selected" : "")>@i</option>
+                        if (year == i)
+                        {
+                            <option value="@i" selected="selected">@i</option>
+                        }
+                        else
+                        {
+                            <option value="@i">@i</option>
+                        }
                     }
                 </select>
             </div>
@@ -107,15 +132,15 @@
                         {
                             var isCurrentMonth = week == 0 ? dayOfWeek >= firstDayOfWeek : currentDay <= daysInMonth;
                             var isWeekend = dayOfWeek == 0 || dayOfWeek == 6;
-                            
+
                             if (isCurrentMonth && currentDay <= daysInMonth)
                             {
                                 var currentDate = new DateTime(year, month, currentDay);
                                 var attendance = Model.FirstOrDefault(a => a.Date.Date == currentDate.Date);
                                 var isToday = currentDate.Date == DateTime.Today.Date;
-                                
+
                                 <div class="col">
-                                    <div class="calendar-day @(isToday ? "border border-primary" : "") @(isWeekend ? "bg-light" : "") p-2 rounded" 
+                                    <div class="calendar-day @(isToday ? "border border-primary" : "") @(isWeekend ? "bg-light" : "") p-2 rounded"
                                          style="min-height: 80px; @(isToday ? "background-color: #e3f2fd;" : "")">
                                         <div class="d-flex justify-content-between align-items-start">
                                             <span class="fw-bold @(isToday ? "text-primary" : "")">@currentDay</span>
@@ -134,7 +159,7 @@
                                                 </span>
                                             }
                                         </div>
-                                        
+
                                         @if (attendance != null)
                                         {
                                             <div class="mt-1">
@@ -164,7 +189,7 @@
                                                 <small class="text-muted">No record</small>
                                             </div>
                                         }
-                                        
+
                                         <div class="mt-1">
                                             @if (attendance != null)
                                             {
@@ -174,7 +199,7 @@
                                             }
                                             else
                                             {
-                                                <a asp-action="Create" asp-route-employeeId="@selectedEmployeeId" asp-route-date="@currentDate.ToString("yyyy-MM-dd")" 
+                                                <a asp-action="Create" asp-route-employeeId="@selectedEmployeeId" asp-route-date="@currentDate.ToString("yyyy-MM-dd")"
                                                    class="btn btn-sm btn-outline-primary p-0" style="font-size: 0.6rem;">
                                                     <i class="fas fa-plus"></i>
                                                 </a>
@@ -332,9 +357,9 @@
         border: 1px solid #dee2e6;
         transition: all 0.2s;
     }
-    
-    .calendar-day:hover {
-        background-color: #f8f9fa;
-        transform: scale(1.02);
-    }
+
+        .calendar-day:hover {
+            background-color: #f8f9fa;
+            transform: scale(1.02);
+        }
 </style>

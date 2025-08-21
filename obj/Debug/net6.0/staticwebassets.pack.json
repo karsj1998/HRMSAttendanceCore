@@ -1,0 +1,2629 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\README.md",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\README.md"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\alert.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\alert.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\alert.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\alert.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\alert.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\alert.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\base-component.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\base-component.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\base-component.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\base-component.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\base-component.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\base-component.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\button.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\button.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\button.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\button.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\button.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\button.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\carousel.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\carousel.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\carousel.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\carousel.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\carousel.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\carousel.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\collapse.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\collapse.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\collapse.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\collapse.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\collapse.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\collapse.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\dom\\data.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\dom\\data.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\dom\\data.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\dom\\data.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\dom\\data.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\dom\\data.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\dom\\event-handler.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\dom\\event-handler.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\dom\\event-handler.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\dom\\event-handler.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\dom\\event-handler.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\dom\\event-handler.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\dom\\manipulator.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\dom\\manipulator.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\dom\\manipulator.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\dom\\manipulator.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\dom\\manipulator.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\dom\\manipulator.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\dom\\selector-engine.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\dom\\selector-engine.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\dom\\selector-engine.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\dom\\selector-engine.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\dom\\selector-engine.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\dom\\selector-engine.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\dropdown.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\dropdown.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\dropdown.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\dropdown.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\dropdown.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\dropdown.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\modal.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\modal.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\modal.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\modal.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\modal.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\modal.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\offcanvas.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\offcanvas.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\offcanvas.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\offcanvas.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\offcanvas.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\offcanvas.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\popover.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\popover.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\popover.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\popover.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\popover.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\popover.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\scrollspy.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\scrollspy.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\scrollspy.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\scrollspy.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\scrollspy.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\scrollspy.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\tab.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\tab.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\tab.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\tab.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\tab.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\tab.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\toast.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\toast.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\toast.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\toast.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\toast.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\toast.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\tooltip.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\tooltip.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\tooltip.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\tooltip.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\tooltip.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\tooltip.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\backdrop.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\backdrop.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\backdrop.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\backdrop.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\backdrop.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\backdrop.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\component-functions.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\component-functions.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\component-functions.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\component-functions.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\component-functions.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\component-functions.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\config.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\config.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\config.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\config.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\config.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\config.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\focustrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\focustrap.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\focustrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\focustrap.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\focustrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\focustrap.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\index.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\index.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\index.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\index.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\index.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\index.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\sanitizer.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\sanitizer.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\sanitizer.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\sanitizer.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\sanitizer.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\sanitizer.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\scrollbar.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\scrollbar.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\scrollbar.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\scrollbar.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\scrollbar.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\scrollbar.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\swipe.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\swipe.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\swipe.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\swipe.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\swipe.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\swipe.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\template-factory.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\template-factory.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\template-factory.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\template-factory.js.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\dist\\util\\template-factory.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\dist\\util\\template-factory.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\index.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\index.esm.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\index.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\index.esm.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\index.umd.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\index.umd.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\index.umd.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\index.umd.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\alert.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\alert.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\alert.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\alert.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\base-component.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\base-component.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\base-component.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\base-component.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\button.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\button.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\button.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\button.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\carousel.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\carousel.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\carousel.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\carousel.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\collapse.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\collapse.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\collapse.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\collapse.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\dom\\data.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\dom\\data.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\dom\\data.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\dom\\data.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\dom\\event-handler.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\dom\\event-handler.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\dom\\event-handler.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\dom\\event-handler.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\dom\\manipulator.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\dom\\manipulator.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\dom\\manipulator.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\dom\\manipulator.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\dom\\selector-engine.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\dom\\selector-engine.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\dom\\selector-engine.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\dom\\selector-engine.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\dropdown.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\dropdown.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\dropdown.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\dropdown.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\modal.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\modal.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\modal.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\modal.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\offcanvas.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\offcanvas.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\offcanvas.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\offcanvas.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\popover.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\popover.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\popover.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\popover.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\scrollspy.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\scrollspy.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\scrollspy.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\scrollspy.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\tab.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\tab.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\tab.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\tab.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\toast.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\toast.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\toast.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\toast.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\tooltip.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\tooltip.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\tooltip.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\tooltip.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\util\\backdrop.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\util\\backdrop.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\util\\backdrop.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\util\\backdrop.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\util\\component-functions.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\util\\component-functions.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\util\\component-functions.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\util\\component-functions.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\util\\config.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\util\\config.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\util\\config.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\util\\config.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\util\\focustrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\util\\focustrap.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\util\\focustrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\util\\focustrap.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\util\\index.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\util\\index.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\util\\index.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\util\\index.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\util\\sanitizer.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\util\\sanitizer.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\util\\sanitizer.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\util\\sanitizer.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\util\\scrollbar.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\util\\scrollbar.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\util\\scrollbar.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\util\\scrollbar.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\util\\swipe.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\util\\swipe.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\util\\swipe.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\util\\swipe.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\util\\template-factory.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\util\\template-factory.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\js\\src\\util\\template-factory.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\src\\util\\template-factory.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\package.json",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\package.json"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_accordion.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_accordion.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_alert.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_alert.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_badge.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_badge.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_breadcrumb.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_button-group.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_button-group.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_buttons.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_buttons.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_card.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_card.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_carousel.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_carousel.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_close.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_close.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_containers.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_containers.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_dropdown.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_forms.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_forms.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_functions.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_functions.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_grid.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_grid.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_helpers.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_helpers.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_images.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_images.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_list-group.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_list-group.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_maps.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_maps.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_modal.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_modal.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_nav.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_nav.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_navbar.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_navbar.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_offcanvas.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_offcanvas.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_pagination.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_pagination.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_placeholders.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_placeholders.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_popover.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_popover.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_progress.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_progress.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_reboot.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_reboot.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_root.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_root.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_spinners.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_spinners.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_tables.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_tables.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_toasts.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_toasts.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_tooltip.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_transitions.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_transitions.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_type.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_type.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_utilities.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_utilities.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_variables-dark.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_variables-dark.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\_variables.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-utilities.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\bootstrap-utilities.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\forms\\_floating-labels.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\forms\\_floating-labels.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-check.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\forms\\_form-check.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-control.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\forms\\_form-control.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-range.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\forms\\_form-range.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-select.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\forms\\_form-select.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-text.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\forms\\_form-text.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\forms\\_input-group.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\forms\\_input-group.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\forms\\_labels.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\forms\\_labels.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\forms\\_validation.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\forms\\_validation.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_clearfix.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_color-bg.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_color-bg.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_colored-links.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_colored-links.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_focus-ring.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_focus-ring.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_icon-link.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_icon-link.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_position.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_position.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_ratio.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_ratio.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_stacks.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_stacks.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_stretched-link.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_text-truncation.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_text-truncation.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_visually-hidden.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_vr.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\helpers\\_vr.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_backdrop.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_backdrop.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_banner.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_banner.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_color-mode.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_color-mode.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_color-scheme.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_color-scheme.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_container.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_container.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_image.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_table-variants.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_table-variants.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_utilities.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_utilities.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\mixins\\_visually-hidden.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_api.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\utilities\\_api.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\bootstrap\\scss\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\README.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\README.md"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\package.json",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\package.json"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\README.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\README.md"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_ar.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_ar.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_ar.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_ar.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_az.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_az.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_az.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_az.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_bg.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_bg.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_bg.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_bg.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_bn_BD.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_bn_BD.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_bn_BD.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_bn_BD.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_ca.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_ca.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_ca.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_ca.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_cs.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_cs.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_cs.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_cs.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_da.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_da.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_da.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_da.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_de.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_de.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_de.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_de.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_el.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_el.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_el.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_el.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_es.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_es.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_es.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_es.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_es_AR.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_es_AR.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_es_AR.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_es_AR.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_es_PE.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_es_PE.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_es_PE.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_es_PE.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_et.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_et.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_et.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_et.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_eu.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_eu.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_eu.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_eu.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_fa.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_fa.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_fa.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_fa.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_fi.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_fi.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_fi.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_fi.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_fr.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_fr.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_fr.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_fr.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_ge.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_ge.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_ge.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_ge.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_gl.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_gl.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_gl.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_gl.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_he.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_he.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_he.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_he.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_hi.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_hi.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_hi.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_hi.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_hr.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_hr.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_hr.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_hr.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_hu.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_hu.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_hu.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_hu.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_hy_AM.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_hy_AM.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_hy_AM.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_hy_AM.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_id.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_id.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_id.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_id.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_is.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_is.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_is.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_is.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_it.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_it.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_it.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_it.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_ja.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_ja.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_ja.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_ja.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_ka.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_ka.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_ka.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_ka.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_kk.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_kk.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_kk.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_kk.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_ko.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_ko.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_ko.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_ko.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_lt.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_lt.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_lt.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_lt.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_lv.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_lv.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_lv.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_lv.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_mk.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_mk.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_mk.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_mk.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_my.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_my.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_my.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_my.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_nl.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_nl.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_nl.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_nl.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_no.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_no.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_no.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_no.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_pl.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_pl.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_pl.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_pl.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_pt_BR.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_pt_BR.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_pt_BR.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_pt_BR.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_pt_PT.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_pt_PT.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_pt_PT.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_pt_PT.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_ro.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_ro.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_ro.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_ro.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_ru.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_ru.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_ru.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_ru.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_sd.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_sd.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_sd.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_sd.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_si.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_si.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_si.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_si.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_sk.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_sk.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_sk.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_sk.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_sl.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_sl.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_sl.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_sl.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_sr.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_sr.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_sr.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_sr.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_sr_lat.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_sr_lat.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_sr_lat.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_sr_lat.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_sv.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_sv.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_sv.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_sv.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_th.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_th.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_th.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_th.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_tj.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_tj.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_tj.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_tj.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_tr.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_tr.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_tr.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_tr.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_uk.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_uk.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_uk.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_uk.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_ur.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_ur.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_ur.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_ur.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_vi.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_vi.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_vi.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_vi.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_zh.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_zh.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_zh.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_zh.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_zh_TW.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_zh_TW.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\messages_zh_TW.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\messages_zh_TW.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\methods_de.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\methods_de.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\methods_de.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\methods_de.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\methods_es_CL.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\methods_es_CL.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\methods_es_CL.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\methods_es_CL.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\methods_fi.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\methods_fi.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\methods_fi.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\methods_fi.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\methods_it.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\methods_it.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\methods_it.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\methods_it.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\methods_nl.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\methods_nl.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\methods_nl.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\methods_nl.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\methods_pt.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\methods_pt.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\dist\\localization\\methods_pt.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\localization\\methods_pt.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery-validation\\package.json",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\package.json"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\AUTHORS.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\AUTHORS.txt"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\README.md",
+      "PackagePath": "staticwebassets\\lib\\jquery\\README.md"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\bower.json",
+      "PackagePath": "staticwebassets\\lib\\jquery\\bower.json"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\package.json",
+      "PackagePath": "staticwebassets\\lib\\jquery\\package.json"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\ajax.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\ajax.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\ajax.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\ajax.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\ajax\\jsonp.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\ajax\\jsonp.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\ajax\\jsonp.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\ajax\\jsonp.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\ajax\\load.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\ajax\\load.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\ajax\\load.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\ajax\\load.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\ajax\\script.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\ajax\\script.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\ajax\\script.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\ajax\\script.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\ajax\\var\\location.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\ajax\\var\\location.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\ajax\\var\\location.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\ajax\\var\\location.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\ajax\\var\\nonce.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\ajax\\var\\nonce.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\ajax\\var\\nonce.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\ajax\\var\\nonce.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\ajax\\var\\rquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\ajax\\var\\rquery.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\ajax\\var\\rquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\ajax\\var\\rquery.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\ajax\\xhr.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\ajax\\xhr.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\ajax\\xhr.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\ajax\\xhr.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\attributes.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\attributes.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\attributes.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\attributes.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\attributes\\attr.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\attributes\\attr.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\attributes\\attr.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\attributes\\attr.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\attributes\\classes.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\attributes\\classes.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\attributes\\classes.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\attributes\\classes.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\attributes\\prop.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\attributes\\prop.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\attributes\\prop.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\attributes\\prop.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\attributes\\support.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\attributes\\support.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\attributes\\support.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\attributes\\support.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\attributes\\val.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\attributes\\val.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\attributes\\val.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\attributes\\val.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\callbacks.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\callbacks.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\callbacks.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\callbacks.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\DOMEval.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\DOMEval.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\DOMEval.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\DOMEval.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\access.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\access.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\access.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\access.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\camelCase.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\camelCase.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\camelCase.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\camelCase.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\init.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\init.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\init.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\init.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\isAttached.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\isAttached.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\isAttached.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\isAttached.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\nodeName.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\nodeName.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\nodeName.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\nodeName.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\parseHTML.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\parseHTML.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\parseHTML.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\parseHTML.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\parseXML.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\parseXML.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\parseXML.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\parseXML.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\ready-no-deferred.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\ready-no-deferred.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\ready-no-deferred.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\ready-no-deferred.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\ready.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\ready.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\ready.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\ready.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\readyException.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\readyException.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\readyException.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\readyException.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\stripAndCollapse.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\stripAndCollapse.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\stripAndCollapse.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\stripAndCollapse.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\support.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\support.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\support.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\support.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\toType.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\toType.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\toType.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\toType.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\var\\rhtml.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\var\\rhtml.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\var\\rhtml.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\var\\rhtml.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\var\\rsingleTag.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\var\\rsingleTag.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\core\\var\\rsingleTag.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\core\\var\\rsingleTag.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\addGetHookIf.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\addGetHookIf.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\addGetHookIf.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\addGetHookIf.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\adjustCSS.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\adjustCSS.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\adjustCSS.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\adjustCSS.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\curCSS.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\curCSS.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\curCSS.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\curCSS.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\finalPropName.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\finalPropName.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\finalPropName.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\finalPropName.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\hiddenVisibleSelectors.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\hiddenVisibleSelectors.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\hiddenVisibleSelectors.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\hiddenVisibleSelectors.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\showHide.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\showHide.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\showHide.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\showHide.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\support.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\support.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\support.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\support.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\var\\cssExpand.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\var\\cssExpand.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\var\\cssExpand.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\var\\cssExpand.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\var\\getStyles.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\var\\getStyles.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\var\\getStyles.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\var\\getStyles.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\var\\isHiddenWithinTree.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\var\\isHiddenWithinTree.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\var\\isHiddenWithinTree.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\var\\isHiddenWithinTree.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\var\\rboxStyle.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\var\\rboxStyle.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\var\\rboxStyle.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\var\\rboxStyle.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\var\\rcustomProp.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\var\\rcustomProp.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\var\\rcustomProp.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\var\\rcustomProp.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\var\\rnumnonpx.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\var\\rnumnonpx.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\var\\rnumnonpx.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\var\\rnumnonpx.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\var\\swap.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\var\\swap.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\css\\var\\swap.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\css\\var\\swap.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\data.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\data.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\data.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\data.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\data\\Data.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\data\\Data.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\data\\Data.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\data\\Data.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\data\\var\\acceptData.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\data\\var\\acceptData.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\data\\var\\acceptData.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\data\\var\\acceptData.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\data\\var\\dataPriv.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\data\\var\\dataPriv.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\data\\var\\dataPriv.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\data\\var\\dataPriv.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\data\\var\\dataUser.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\data\\var\\dataUser.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\data\\var\\dataUser.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\data\\var\\dataUser.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\deferred.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\deferred.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\deferred.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\deferred.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\deferred\\exceptionHook.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\deferred\\exceptionHook.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\deferred\\exceptionHook.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\deferred\\exceptionHook.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\deprecated.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\deprecated.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\deprecated.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\deprecated.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\deprecated\\ajax-event-alias.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\deprecated\\ajax-event-alias.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\deprecated\\ajax-event-alias.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\deprecated\\ajax-event-alias.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\deprecated\\event.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\deprecated\\event.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\deprecated\\event.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\deprecated\\event.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\dimensions.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\dimensions.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\dimensions.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\dimensions.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\effects.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\effects.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\effects.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\effects.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\effects\\Tween.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\effects\\Tween.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\effects\\Tween.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\effects\\Tween.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\effects\\animatedSelector.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\effects\\animatedSelector.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\effects\\animatedSelector.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\effects\\animatedSelector.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\event.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\event.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\event.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\event.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\event\\trigger.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\event\\trigger.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\event\\trigger.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\event\\trigger.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\exports\\amd.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\exports\\amd.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\exports\\amd.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\exports\\amd.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\exports\\global.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\exports\\global.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\exports\\global.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\exports\\global.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\jquery.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\manipulation.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\manipulation.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\manipulation.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\manipulation.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\manipulation\\_evalUrl.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\manipulation\\_evalUrl.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\manipulation\\_evalUrl.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\manipulation\\_evalUrl.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\manipulation\\buildFragment.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\manipulation\\buildFragment.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\manipulation\\buildFragment.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\manipulation\\buildFragment.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\manipulation\\getAll.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\manipulation\\getAll.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\manipulation\\getAll.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\manipulation\\getAll.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\manipulation\\setGlobalEval.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\manipulation\\setGlobalEval.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\manipulation\\setGlobalEval.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\manipulation\\setGlobalEval.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\manipulation\\support.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\manipulation\\support.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\manipulation\\support.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\manipulation\\support.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\manipulation\\var\\rscriptType.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\manipulation\\var\\rscriptType.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\manipulation\\var\\rscriptType.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\manipulation\\var\\rscriptType.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\manipulation\\var\\rtagName.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\manipulation\\var\\rtagName.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\manipulation\\var\\rtagName.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\manipulation\\var\\rtagName.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\manipulation\\wrapMap.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\manipulation\\wrapMap.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\manipulation\\wrapMap.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\manipulation\\wrapMap.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\offset.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\offset.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\offset.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\offset.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\queue.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\queue.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\queue.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\queue.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\queue\\delay.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\queue\\delay.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\queue\\delay.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\queue\\delay.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\selector-native.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\selector-native.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\selector-native.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\selector-native.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\selector.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\selector.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\selector.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\selector.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\selector\\contains.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\selector\\contains.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\selector\\contains.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\selector\\contains.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\selector\\escapeSelector.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\selector\\escapeSelector.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\selector\\escapeSelector.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\selector\\escapeSelector.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\serialize.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\serialize.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\serialize.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\serialize.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\traversing.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\traversing.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\traversing.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\traversing.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\traversing\\findFilter.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\traversing\\findFilter.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\traversing\\findFilter.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\traversing\\findFilter.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\traversing\\var\\dir.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\traversing\\var\\dir.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\traversing\\var\\dir.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\traversing\\var\\dir.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\traversing\\var\\rneedsContext.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\traversing\\var\\rneedsContext.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\traversing\\var\\rneedsContext.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\traversing\\var\\rneedsContext.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\traversing\\var\\siblings.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\traversing\\var\\siblings.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\traversing\\var\\siblings.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\traversing\\var\\siblings.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\ObjectFunctionString.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\ObjectFunctionString.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\ObjectFunctionString.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\ObjectFunctionString.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\arr.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\arr.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\arr.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\arr.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\class2type.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\class2type.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\class2type.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\class2type.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\document.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\document.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\document.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\document.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\documentElement.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\documentElement.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\documentElement.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\documentElement.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\flat.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\flat.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\flat.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\flat.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\fnToString.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\fnToString.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\fnToString.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\fnToString.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\getProto.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\getProto.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\getProto.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\getProto.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\hasOwn.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\hasOwn.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\hasOwn.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\hasOwn.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\indexOf.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\indexOf.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\indexOf.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\indexOf.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\isFunction.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\isFunction.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\isFunction.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\isFunction.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\isWindow.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\isWindow.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\isWindow.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\isWindow.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\pnum.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\pnum.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\pnum.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\pnum.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\pop.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\pop.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\pop.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\pop.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\push.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\push.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\push.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\push.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\rcheckableType.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\rcheckableType.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\rcheckableType.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\rcheckableType.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\rcssNum.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\rcssNum.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\rcssNum.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\rcssNum.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\rnothtmlwhite.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\rnothtmlwhite.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\rnothtmlwhite.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\rnothtmlwhite.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\rtrimCSS.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\rtrimCSS.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\rtrimCSS.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\rtrimCSS.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\slice.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\slice.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\slice.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\slice.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\sort.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\sort.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\sort.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\sort.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\splice.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\splice.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\splice.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\splice.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\support.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\support.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\support.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\support.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\toString.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\toString.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\toString.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\toString.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\whitespace.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\whitespace.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\var\\whitespace.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\var\\whitespace.min.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\wrap.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\wrap.js"
+    },
+    {
+      "Id": "D:\\MY Projects\\HRMSAttendanceCore\\wwwroot\\lib\\jquery\\src\\wrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\src\\wrap.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.EmployeeAttendance.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.EmployeeAttendance.props",
+      "PackagePath": "build\\EmployeeAttendance.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.EmployeeAttendance.props",
+      "PackagePath": "buildMultiTargeting\\EmployeeAttendance.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.EmployeeAttendance.props",
+      "PackagePath": "buildTransitive\\EmployeeAttendance.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

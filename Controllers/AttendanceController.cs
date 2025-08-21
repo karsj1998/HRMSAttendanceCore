@@ -97,6 +97,7 @@ namespace EmployeeAttendance.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("EmployeeId,Date,CheckInTime,CheckOutTime,Status,Notes")] Attendance attendance)
         {
+            ModelState.Remove("Employee");
             if (ModelState.IsValid)
             {
                 await _attendanceService.CreateAttendanceAsync(attendance);

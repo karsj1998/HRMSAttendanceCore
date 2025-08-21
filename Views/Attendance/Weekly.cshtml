@@ -27,9 +27,18 @@
                     {
                         foreach (var employee in employees)
                         {
-                            <option value="@employee.Id" @(selectedEmployeeId == employee.Id ? "selected" : "")>
-                                @employee.FullName (@employee.EmployeeId)
-                            </option>
+                            if (selectedEmployeeId == employee.Id)
+                            {
+                                <option value="@employee.Id" selected="selected">
+                                    @employee.FullName (@employee.EmployeeId)
+                                </option>
+                            }
+                            else
+                            {
+                                <option value="@employee.Id">
+                                    @employee.FullName (@employee.EmployeeId)
+                                </option>
+                            }
                         }
                     }
                 </select>
