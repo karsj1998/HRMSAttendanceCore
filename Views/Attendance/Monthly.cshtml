@@ -1,0 +1,340 @@
+@model IEnumerable<EmployeeAttendance.Models.Attendance>
+
+@{
+    ViewData["Title"] = "Monthly Attendance";
+    var employees = ViewBag.Employees as IEnumerable<EmployeeAttendance.Models.Employee>;
+    var selectedEmployeeId = ViewBag.SelectedEmployeeId;
+    var year = ViewBag.Year;
+    var month = ViewBag.Month;
+    var monthName = ViewBag.MonthName;
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>
+        <i class="fas fa-calendar-alt text-primary me-3"></i>Monthly Attendance
+    </h1>
+    <a asp-action="Create" class="btn btn-primary">
+        <i class="fas fa-plus me-2"></i>Add Attendance
+    </a>
+</div>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <form method="get" class="row g-3">
+            <div class="col-md-4">
+                <label for="employeeId" class="form-label">Select Employee</label>
+                <select name="employeeId" id="employeeId" class="form-select" onchange="this.form.submit()">
+                    @if (employees != null)
+                    {
+                        foreach (var employee in employees)
+                        {
+                            <option value="@employee.Id" @(selectedEmployeeId == employee.Id ? "selected" : "")>
+                                @employee.FullName (@employee.EmployeeId)
+                            </option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="month" class="form-label">Month</label>
+                <select name="month" id="month" class="form-select" onchange="this.form.submit()">
+                    @for (int i = 1; i <= 12; i++)
+                    {
+                        <option value="@i" @(month == i ? "selected" : "")>
+                            @System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i)
+                        </option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="year" class="form-label">Year</label>
+                <select name="year" id="year" class="form-select" onchange="this.form.submit()">
+                    @for (int i = DateTime.Now.Year - 2; i <= DateTime.Now.Year + 1; i++)
+                    {
+                        <option value="@i" @(year == i ? "selected" : "")>@i</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-2 d-flex align-items-end">
+                <button type="button" class="btn btn-outline-primary w-100" onclick="currentMonth()">
+                    Current Month
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (selectedEmployeeId != null)
+{
+    var selectedEmployee = employees?.FirstOrDefault(e => e.Id == selectedEmployeeId);
+    if (selectedEmployee != null)
+    {
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-user me-2"></i>@selectedEmployee.FullName - @monthName
+                </h5>
+            </div>
+            <div class="card-body">
+                @{
+                    var firstDayOfMonth = new DateTime(year, month, 1);
+                    var lastDayOfMonth = firstDayOfMonth.AddMonths(1).AddDays(-1);
+                    var firstDayOfWeek = (int)firstDayOfMonth.DayOfWeek;
+                    var daysInMonth = DateTime.DaysInMonth(year, month);
+                }
+
+                <!-- Calendar Header -->
+                <div class="row mb-3">
+                    <div class="col text-center fw-bold text-muted">Sun</div>
+                    <div class="col text-center fw-bold text-muted">Mon</div>
+                    <div class="col text-center fw-bold text-muted">Tue</div>
+                    <div class="col text-center fw-bold text-muted">Wed</div>
+                    <div class="col text-center fw-bold text-muted">Thu</div>
+                    <div class="col text-center fw-bold text-muted">Fri</div>
+                    <div class="col text-center fw-bold text-muted">Sat</div>
+                </div>
+
+                <!-- Calendar Grid -->
+                @{
+                    var currentDay = 1;
+                    var totalWeeks = Math.Ceiling((firstDayOfWeek + daysInMonth) / 7.0);
+                }
+
+                @for (int week = 0; week < totalWeeks; week++)
+                {
+                    <div class="row mb-2">
+                        @for (int dayOfWeek = 0; dayOfWeek < 7; dayOfWeek++)
+                        {
+                            var isCurrentMonth = week == 0 ? dayOfWeek >= firstDayOfWeek : currentDay <= daysInMonth;
+                            var isWeekend = dayOfWeek == 0 || dayOfWeek == 6;
+                            
+                            if (isCurrentMonth && currentDay <= daysInMonth)
+                            {
+                                var currentDate = new DateTime(year, month, currentDay);
+                                var attendance = Model.FirstOrDefault(a => a.Date.Date == currentDate.Date);
+                                var isToday = currentDate.Date == DateTime.Today.Date;
+                                
+                                <div class="col">
+                                    <div class="calendar-day @(isToday ? "border border-primary" : "") @(isWeekend ? "bg-light" : "") p-2 rounded" 
+                                         style="min-height: 80px; @(isToday ? "background-color: #e3f2fd;" : "")">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <span class="fw-bold @(isToday ? "text-primary" : "")">@currentDay</span>
+                                            @if (attendance != null)
+                                            {
+                                                var statusClass = attendance.Status switch
+                                                {
+                                                    "Present" => "bg-success",
+                                                    "Late" => "bg-warning",
+                                                    "Absent" => "bg-danger",
+                                                    "Half-day" => "bg-info",
+                                                    _ => "bg-secondary"
+                                                };
+                                                <span class="badge @statusClass" style="font-size: 0.6rem;">
+                                                    @attendance.Status.Substring(0, 1)
+                                                </span>
+                                            }
+                                        </div>
+                                        
+                                        @if (attendance != null)
+                                        {
+                                            <div class="mt-1">
+                                                @if (attendance.CheckInTime.HasValue)
+                                                {
+                                                    <small class="text-success d-block">
+                                                        <i class="fas fa-sign-in-alt"></i> @attendance.CheckInTime.Value.ToString("HH:mm")
+                                                    </small>
+                                                }
+                                                @if (attendance.CheckOutTime.HasValue)
+                                                {
+                                                    <small class="text-info d-block">
+                                                        <i class="fas fa-sign-out-alt"></i> @attendance.CheckOutTime.Value.ToString("HH:mm")
+                                                    </small>
+                                                }
+                                                @if (attendance.WorkHours.HasValue)
+                                                {
+                                                    <small class="text-muted d-block">
+                                                        @attendance.WorkHours.Value.ToString(@"hh\:mm")
+                                                    </small>
+                                                }
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="mt-1">
+                                                <small class="text-muted">No record</small>
+                                            </div>
+                                        }
+                                        
+                                        <div class="mt-1">
+                                            @if (attendance != null)
+                                            {
+                                                <a asp-action="Edit" asp-route-id="@attendance.Id" class="btn btn-sm btn-outline-warning p-0" style="font-size: 0.6rem;">
+                                                    <i class="fas fa-edit"></i>
+                                                </a>
+                                            }
+                                            else
+                                            {
+                                                <a asp-action="Create" asp-route-employeeId="@selectedEmployeeId" asp-route-date="@currentDate.ToString("yyyy-MM-dd")" 
+                                                   class="btn btn-sm btn-outline-primary p-0" style="font-size: 0.6rem;">
+                                                    <i class="fas fa-plus"></i>
+                                                </a>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                                currentDay++;
+                            }
+                            else
+                            {
+                                <div class="col">
+                                    <div class="calendar-day p-2" style="min-height: 80px;"></div>
+                                </div>
+                            }
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Monthly Summary -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card bg-success text-white">
+                    <div class="card-body text-center">
+                        <h4>@Model.Count(a => a.Status == "Present")</h4>
+                        <small>Present Days</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-warning text-white">
+                    <div class="card-body text-center">
+                        <h4>@Model.Count(a => a.Status == "Late")</h4>
+                        <small>Late Days</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-danger text-white">
+                    <div class="card-body text-center">
+                        <h4>@Model.Count(a => a.Status == "Absent")</h4>
+                        <small>Absent Days</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-info text-white">
+                    <div class="card-body text-center">
+                        <h4>@Model.Where(a => a.WorkHours.HasValue).Sum(a => a.WorkHours.Value.TotalHours).ToString("F1")</h4>
+                        <small>Total Hours</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detailed Table View -->
+        <div class="card mt-4">
+            <div class="card-header">
+                <h6 class="card-title mb-0">Detailed Attendance Records</h6>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-sm table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Date</th>
+                                <th>Check In</th>
+                                <th>Check Out</th>
+                                <th>Work Hours</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var attendance in Model.OrderBy(a => a.Date))
+                            {
+                                <tr>
+                                    <td>@attendance.Date.ToString("MMM dd, yyyy (ddd)")</td>
+                                    <td>
+                                        @if (attendance.CheckInTime.HasValue)
+                                        {
+                                            <span class="text-success">@attendance.CheckInTime.Value.ToString("HH:mm")</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="text-muted">-</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (attendance.CheckOutTime.HasValue)
+                                        {
+                                            <span class="text-info">@attendance.CheckOutTime.Value.ToString("HH:mm")</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="text-muted">-</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (attendance.WorkHours.HasValue)
+                                        {
+                                            <span class="badge bg-success">@attendance.WorkHours.Value.ToString(@"hh\:mm")</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="text-muted">-</span>
+                                        }
+                                    </td>
+                                    <td>
+                                        @{
+                                            var statusClass = attendance.Status switch
+                                            {
+                                                "Present" => "bg-success",
+                                                "Late" => "bg-warning",
+                                                "Absent" => "bg-danger",
+                                                "Half-day" => "bg-info",
+                                                _ => "bg-secondary"
+                                            };
+                                        }
+                                        <span class="badge @statusClass">@attendance.Status</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group btn-group-sm" role="group">
+                                            <a asp-action="Edit" asp-route-id="@attendance.Id" class="btn btn-outline-warning">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                            <a asp-action="Delete" asp-route-id="@attendance.Id" class="btn btn-outline-danger">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+}
+
+<script>
+    function currentMonth() {
+        const today = new Date();
+        document.getElementById('month').value = today.getMonth() + 1;
+        document.getElementById('year').value = today.getFullYear();
+        document.getElementById('month').form.submit();
+    }
+</script>
+
+<style>
+    .calendar-day {
+        border: 1px solid #dee2e6;
+        transition: all 0.2s;
+    }
+    
+    .calendar-day:hover {
+        background-color: #f8f9fa;
+        transform: scale(1.02);
+    }
+</style>

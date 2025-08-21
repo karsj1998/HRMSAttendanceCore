@@ -1,0 +1,153 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h1 class="display-4 text-center mb-4">
+            <i class="fas fa-tachometer-alt text-primary me-3"></i>Employee Attendance Dashboard
+        </h1>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card bg-primary text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">Total Employees</h4>
+                        <h2 class="display-6">@ViewBag.TotalEmployees</h2>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-users fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-success text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">Present Today</h4>
+                        <h2 class="display-6">@ViewBag.PresentToday</h2>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-check-circle fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-warning text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">Late Today</h4>
+                        <h2 class="display-6">@ViewBag.LateToday</h2>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-clock fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-danger text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="card-title">Absent Today</h4>
+                        <h2 class="display-6">@ViewBag.AbsentToday</h2>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-times-circle fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-calendar-week me-2"></i>Quick Actions
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-6 mb-3">
+                        <a asp-controller="Attendance" asp-action="Create" class="btn btn-primary btn-lg w-100">
+                            <i class="fas fa-plus me-2"></i>Add Attendance
+                        </a>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <a asp-controller="Employees" asp-action="Create" class="btn btn-success btn-lg w-100">
+                            <i class="fas fa-user-plus me-2"></i>Add Employee
+                        </a>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <a asp-controller="Attendance" asp-action="Weekly" class="btn btn-info btn-lg w-100">
+                            <i class="fas fa-calendar-week me-2"></i>Weekly View
+                        </a>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <a asp-controller="Attendance" asp-action="Monthly" class="btn btn-warning btn-lg w-100">
+                            <i class="fas fa-calendar-alt me-2"></i>Monthly View
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-chart-bar me-2"></i>Today's Summary
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row text-center">
+                    <div class="col-4">
+                        <div class="border-end">
+                            <h3 class="text-success">@ViewBag.PresentToday</h3>
+                            <small class="text-muted">Present</small>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border-end">
+                            <h3 class="text-warning">@ViewBag.LateToday</h3>
+                            <small class="text-muted">Late</small>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div>
+                            <h3 class="text-danger">@ViewBag.AbsentToday</h3>
+                            <small class="text-muted">Absent</small>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                    <h6>Attendance Rate Today</h6>
+                    @{
+                        var total = ViewBag.TotalEmployees;
+                        var present = ViewBag.PresentToday;
+                        var rate = total > 0 ? Math.Round((double)present / total * 100, 1) : 0;
+                    }
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: @rate%" aria-valuenow="@rate" aria-valuemin="0" aria-valuemax="100">@rate%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
