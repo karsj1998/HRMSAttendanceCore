@@ -10,5 +10,6 @@ namespace EmployeeAttendance.Services
         Task<Employee> UpdateEmployeeAsync(Employee employee);
         Task DeleteEmployeeAsync(int id);
         Task<IEnumerable<Employee>> GetActiveEmployeesAsync();
+        Task<bool> EmployeeIdExistsAsync(string employeeId, int? excludeEmployeeId = null);
     }
 }

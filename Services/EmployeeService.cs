@@ -59,5 +59,15 @@ namespace EmployeeAttendance.Services
                 .OrderBy(e => e.FirstName)
                 .ToListAsync();
         }
+
+        public async Task<bool> EmployeeIdExistsAsync(string employeeId, int? excludeEmployeeId = null)
+        {
+            var query = _context.Employees.AsQueryable();
+            if (excludeEmployeeId.HasValue)
+            {
+                query = query.Where(e => e.Id != excludeEmployeeId.Value);
+            }
+            return await query.AnyAsync(e => e.EmployeeId == employeeId);
+        }
     }
 }
