@@ -11,6 +11,14 @@
       "destination": "wwwroot/lib/jquery"
     },
     {
+      "library": "sweetalert2@11.12.4",
+      "destination": "wwwroot/lib/sweetalert2/",
+      "files": [
+        "dist/sweetalert2.all.min.js",
+        "dist/sweetalert2.min.css"
+      ]
+    },
+    {
       "library": "jquery-validation@1.20.0",
       "destination": "wwwroot/lib/jquery-validation"
     },

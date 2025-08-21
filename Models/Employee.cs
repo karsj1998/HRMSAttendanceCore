@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeAttendance.Models
 {
@@ -20,6 +21,8 @@ namespace EmployeeAttendance.Models
 
         [Required]
         [StringLength(20)]
+        [Display(Name = "Employee ID")]
+        [Remote(action: "VerifyEmployeeId", controller: "Employees", AdditionalFields = nameof(Id))]
         public string EmployeeId { get; set; } = string.Empty;
 
         [Required]

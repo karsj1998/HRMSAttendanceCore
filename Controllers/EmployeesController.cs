@@ -43,9 +43,15 @@ namespace EmployeeAttendance.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("FirstName,LastName,Email,EmployeeId,Department,Position,HireDate,IsActive")] Employee employee)
         {
+            if (await _employeeService.EmployeeIdExistsAsync(employee.EmployeeId))
+            {
+                ModelState.AddModelError(nameof(Employee.EmployeeId), "Employee ID already exists.");
+            }
+
             if (ModelState.IsValid)
             {
                 await _employeeService.CreateEmployeeAsync(employee);
+                TempData["Toast"] = "Employee saved successfully.";
                 return RedirectToAction(nameof(Index));
             }
             return View(employee);
@@ -72,11 +78,17 @@ namespace EmployeeAttendance.Controllers
                 return NotFound();
             }
 
+            if (await _employeeService.EmployeeIdExistsAsync(employee.EmployeeId, excludeEmployeeId: employee.Id))
+            {
+                ModelState.AddModelError(nameof(Employee.EmployeeId), "Employee ID already exists.");
+            }
+
             if (ModelState.IsValid)
             {
                 try
                 {
                     await _employeeService.UpdateEmployeeAsync(employee);
+                    TempData["Toast"] = "Employee updated successfully.";
                 }
                 catch
                 {
@@ -92,6 +104,14 @@ namespace EmployeeAttendance.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(employee);
+        }
+
+        // Remote validation endpoint for EmployeeId uniqueness
+        [AcceptVerbs("GET", "POST")]
+        public async Task<IActionResult> VerifyEmployeeId(string employeeId, int? id)
+        {
+            var exists = await _employeeService.EmployeeIdExistsAsync(employeeId, excludeEmployeeId: id);
+            return exists ? Json($"Employee ID '{employeeId}' is already taken.") : Json(true);
         }
 
         // GET: Employees/Delete/5
@@ -112,6 +132,7 @@ namespace EmployeeAttendance.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             await _employeeService.DeleteEmployeeAsync(id);
+            TempData["Toast"] = "Employee deleted.";
             return RedirectToAction(nameof(Index));
         }
     }
