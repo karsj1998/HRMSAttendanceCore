@@ -4,8 +4,8 @@
     ViewData["Title"] = "Weekly Attendance";
     var employees = ViewBag.Employees as IEnumerable<EmployeeAttendance.Models.Employee>;
     var selectedEmployeeId = ViewBag.SelectedEmployeeId;
-    var weekStart = ViewBag.WeekStart;
-    var weekEnd = ViewBag.WeekEnd;
+    DateTime weekStart = ViewBag.WeekStart is DateTime ws ? ws : DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek);
+    DateTime weekEnd = ViewBag.WeekEnd is DateTime we ? we : weekStart.AddDays(6);
 }
 
 <div class="d-flex justify-content-between align-items-center mb-4">

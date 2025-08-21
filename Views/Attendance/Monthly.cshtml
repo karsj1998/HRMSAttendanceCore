@@ -4,9 +4,9 @@
     ViewData["Title"] = "Monthly Attendance";
     var employees = ViewBag.Employees as IEnumerable<EmployeeAttendance.Models.Employee>;
     var selectedEmployeeId = ViewBag.SelectedEmployeeId;
-    var year = ViewBag.Year;
-    var month = ViewBag.Month;
-    var monthName = ViewBag.MonthName;
+    int year = ViewBag.Year is int y ? y : DateTime.Today.Year;
+    int month = ViewBag.Month is int m ? m : DateTime.Today.Month;
+    string monthName = ViewBag.MonthName as string ?? new DateTime(year, month, 1).ToString("MMMM yyyy");
 }
 
 <div class="d-flex justify-content-between align-items-center mb-4">
