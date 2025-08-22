@@ -63,6 +63,12 @@ namespace EmployeeAttendance.Services
 
         public async Task<Attendance> CreateAttendanceAsync(Attendance attendance)
         {
+            // Guard: prevent duplicate by (EmployeeId, Date)
+            if (await IsDuplicateAttendanceAsync(attendance.EmployeeId, attendance.Date))
+            {
+                throw new InvalidOperationException("Duplicate attendance for this employee and date.");
+            }
+
             _context.Attendances.Add(attendance);
             await _context.SaveChangesAsync();
             return attendance;
@@ -70,6 +76,12 @@ namespace EmployeeAttendance.Services
 
         public async Task<Attendance> UpdateAttendanceAsync(Attendance attendance)
         {
+            // Guard: prevent duplicate by (EmployeeId, Date), excluding this Id
+            if (await IsDuplicateAttendanceAsync(attendance.EmployeeId, attendance.Date, attendance.Id))
+            {
+                throw new InvalidOperationException("Duplicate attendance for this employee and date.");
+            }
+
             _context.Attendances.Update(attendance);
             await _context.SaveChangesAsync();
             return attendance;
@@ -90,6 +102,17 @@ namespace EmployeeAttendance.Services
             return await _context.Attendances
                 .Include(a => a.Employee)
                 .FirstOrDefaultAsync(a => a.EmployeeId == employeeId && a.Date.Date == date.Date);
+        }
+
+        public async Task<bool> IsDuplicateAttendanceAsync(int employeeId, DateTime date, int? excludeId = null)
+        {
+            var query = _context.Attendances.AsQueryable();
+            query = query.Where(a => a.EmployeeId == employeeId && a.Date.Date == date.Date);
+            if (excludeId.HasValue)
+            {
+                query = query.Where(a => a.Id != excludeId.Value);
+            }
+            return await query.AnyAsync();
         }
     }
 }

@@ -98,10 +98,24 @@ namespace EmployeeAttendance.Controllers
         public async Task<IActionResult> Create([Bind("EmployeeId,Date,CheckInTime,CheckOutTime,Status,Notes")] Attendance attendance)
         {
             ModelState.Remove("Employee");
+
+            // Duplicate validation before save
+            if (await _attendanceService.IsDuplicateAttendanceAsync(attendance.EmployeeId, attendance.Date))
+            {
+                ModelState.AddModelError(string.Empty, "An attendance record already exists for this employee on the selected date.");
+            }
+
             if (ModelState.IsValid)
             {
-                await _attendanceService.CreateAttendanceAsync(attendance);
-                return RedirectToAction(nameof(Index));
+                try
+                {
+                    await _attendanceService.CreateAttendanceAsync(attendance);
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (InvalidOperationException ex)
+                {
+                    ModelState.AddModelError(string.Empty, ex.Message);
+                }
             }
 
             var employees = await _employeeService.GetActiveEmployeesAsync();
@@ -135,11 +149,21 @@ namespace EmployeeAttendance.Controllers
                 return NotFound();
             }
 
+            // Duplicate validation before save, excluding current record
+            if (await _attendanceService.IsDuplicateAttendanceAsync(attendance.EmployeeId, attendance.Date, attendance.Id))
+            {
+                ModelState.AddModelError(string.Empty, "An attendance record already exists for this employee on the selected date.");
+            }
+
             if (ModelState.IsValid)
             {
                 try
                 {
                     await _attendanceService.UpdateAttendanceAsync(attendance);
+                }
+                catch (InvalidOperationException ex)
+                {
+                    ModelState.AddModelError(string.Empty, ex.Message);
                 }
                 catch
                 {
@@ -152,6 +176,12 @@ namespace EmployeeAttendance.Controllers
                     {
                         throw;
                     }
+                }
+                if (!ModelState.ErrorCount.Equals(0))
+                {
+                    var employeesReload = await _employeeService.GetActiveEmployeesAsync();
+                    ViewBag.Employees = employeesReload;
+                    return View(attendance);
                 }
                 return RedirectToAction(nameof(Index));
             }

@@ -13,5 +13,6 @@ namespace EmployeeAttendance.Services
         Task<Attendance> UpdateAttendanceAsync(Attendance attendance);
         Task DeleteAttendanceAsync(int id);
         Task<Attendance?> GetAttendanceByEmployeeAndDateAsync(int employeeId, DateTime date);
+        Task<bool> IsDuplicateAttendanceAsync(int employeeId, DateTime date, int? excludeId = null);
     }
 }
