@@ -114,22 +114,10 @@ namespace EmployeeAttendance.Controllers
             return exists ? Json($"Employee ID '{employeeId}' is already taken.") : Json(true);
         }
 
-        // GET: Employees/Delete/5
-        public async Task<IActionResult> Delete(int id)
-        {
-            var employee = await _employeeService.GetEmployeeByIdAsync(id);
-            if (employee == null)
-            {
-                return NotFound();
-            }
-
-            return View(employee);
-        }
-
         // POST: Employees/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             await _employeeService.DeleteEmployeeAsync(id);
             TempData["Toast"] = "Employee deleted.";

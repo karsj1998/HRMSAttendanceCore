@@ -45,8 +45,9 @@
             </div>
             <div class="col-md-4">
                 <label for="weekStart" class="form-label">Week Starting</label>
-                <input type="date" name="weekStart" id="weekStart" class="form-control" 
-                       value="@(weekStart?.ToString("yyyy-MM-dd"))" onchange="this.form.submit()" />
+                <input type="date" name="weekStart" id="weekStart" class="form-control"
+                       value="@(weekStart)"
+                       onchange="this.form.submit()" />
             </div>
             <div class="col-md-4 d-flex align-items-end">
                 <div class="d-flex gap-2">
@@ -73,7 +74,7 @@
         <div class="card mb-4">
             <div class="card-header">
                 <h5 class="card-title mb-0">
-                    <i class="fas fa-user me-2"></i>@selectedEmployee.FullName - Week of @weekStart?.ToString("MMM dd, yyyy")
+                    <i class="fas fa-user me-2"></i>@selectedEmployee.FullName - Week of @weekStart.ToString("MMM dd, yyyy")
                 </h5>
             </div>
             <div class="card-body">

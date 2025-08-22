@@ -20,18 +20,18 @@ window.showToast = function (message, type = 'success') {
   setTimeout(() => toast.remove(), 3000);
 }
 
-// SweetAlert2 confirm helper
-window.confirmDelete = async function (formSelector) {
-  const res = await Swal.fire({
-    title: 'Are you sure?',
-    text: 'This action cannot be undone.',
-    icon: 'warning',
-    showCancelButton: true,
-    confirmButtonColor: '#d33',
-    cancelButtonColor: '#6c757d',
-    confirmButtonText: 'Yes, delete it!'
-  });
-  if (res.isConfirmed) {
-    document.querySelector(formSelector)?.submit();
-  }
+window.confirmDelete = function (form) {
+    Swal.fire({
+        title: 'Delete employee?',
+        text: 'This action cannot be undone.',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#d33',
+        cancelButtonColor: '#6c757d',
+        confirmButtonText: 'Yes, delete'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            form.submit();
+        }
+    });
 }

@@ -83,7 +83,8 @@ namespace EmployeeAttendance.Controllers
 			{
 				ModelState.AddModelError(string.Empty, "A payroll record already exists for this employee and period.");
 			}
-			if (ModelState.IsValid)
+            ModelState.Remove("Employee");
+            if (ModelState.IsValid)
 			{
 				try
 				{

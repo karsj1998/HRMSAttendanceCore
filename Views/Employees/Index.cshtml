@@ -87,10 +87,9 @@
                                     <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-warning">
                                         <i class="fas fa-edit"></i>
                                     </a>
-                                    <form asp-action="Delete" asp-route-id="@item.Id" method="get" class="d-inline">
-                                        <button type="button" class="btn btn-sm btn-outline-danger" onclick="confirmDelete(this.closest('form'))">
-                                            <i class="fas fa-trash"></i>
-                                        </button>
+                                    <form asp-action="Delete" asp-route-id="@item.Id" method="post"
+                                          onsubmit="event.preventDefault(); confirmDelete(this);">
+                                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                                     </form>
                                 </div>
                             </td>
@@ -114,6 +113,7 @@
             confirmButtonText: 'Yes, delete'
         }).then((result) => {
             if (result.isConfirmed) {
+                console.log(form);
                 form.submit();
             }
         });

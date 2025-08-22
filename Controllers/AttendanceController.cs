@@ -154,7 +154,7 @@ namespace EmployeeAttendance.Controllers
             {
                 ModelState.AddModelError(string.Empty, "An attendance record already exists for this employee on the selected date.");
             }
-
+            ModelState.Remove("Employee");
             if (ModelState.IsValid)
             {
                 try
