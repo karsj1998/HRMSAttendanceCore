@@ -116,5 +116,34 @@ namespace EmployeeAttendance.Controllers
 			await _payrollService.DeleteAsync(id);
 			return RedirectToAction(nameof(Index));
 		}
+
+		// Generate monthly payroll for all employees
+		[HttpGet]
+		public IActionResult Generate()
+		{
+			var now = DateTime.Now;
+			ViewBag.DefaultYear = now.Year;
+			ViewBag.DefaultMonth = now.Month;
+			return View();
+		}
+
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public async Task<IActionResult> Generate(int year, int month)
+		{
+			if (year < 2000 || year > 2100 || month < 1 || month > 12)
+			{
+				ModelState.AddModelError(string.Empty, "Invalid period selected.");
+			}
+			if (!ModelState.IsValid)
+			{
+				ViewBag.DefaultYear = year;
+				ViewBag.DefaultMonth = month;
+				return View();
+			}
+			var created = await _payrollService.GenerateMonthlyAsync(year, month);
+			TempData["Message"] = $"Generated {created} payroll records for {new DateTime(year, month, 1):MMMM yyyy}.";
+			return RedirectToAction(nameof(Index));
+		}
 	}
 }
