@@ -89,7 +89,8 @@ namespace EmployeeAttendance.Services
 
 		public async Task<int> GenerateMonthlyAsync(int year, int month)
 		{
-			var periodDate = new DateTime(year, month, 1);
+			var periodStart = new DateTime(year, month, 1);
+			var periodEnd = periodStart.AddMonths(1).AddDays(-1);
 			var activeEmployees = await _context.Employees
 				.Where(e => e.IsActive)
 				.Select(e => new { e.Id })
@@ -97,10 +98,49 @@ namespace EmployeeAttendance.Services
 
 			// Preload latest effective salary structures up to the period for all active employees
 			var structures = await _context.SalaryStructures
-				.Where(s => s.EffectiveFrom <= periodDate)
+				.Where(s => s.EffectiveFrom <= periodEnd)
 				.GroupBy(s => s.EmployeeId)
 				.Select(g => g.OrderByDescending(s => s.EffectiveFrom).First())
 				.ToDictionaryAsync(s => s.EmployeeId, s => s);
+
+			// Preload attendance within period for all active employees
+			var attendanceByEmployee = await _context.Attendances
+				.Where(a => a.Date >= periodStart && a.Date <= periodEnd)
+				.GroupBy(a => a.EmployeeId)
+				.ToDictionaryAsync(g => g.Key, g => g.ToList());
+
+			// Compute working weekdays in period
+			int workingDays = 0;
+			for (var d = periodStart; d <= periodEnd; d = d.AddDays(1))
+			{
+				if (d.DayOfWeek != DayOfWeek.Saturday && d.DayOfWeek != DayOfWeek.Sunday)
+				{
+					workingDays++;
+				}
+			}
+			if (workingDays == 0)
+			{
+				workingDays = 1; // guard against divide-by-zero for edge months
+			}
+
+			decimal MapStatusToUnit(string status)
+			{
+				if (string.IsNullOrWhiteSpace(status)) return 0m;
+				switch (status.Trim().ToLowerInvariant())
+				{
+					case "present":
+					case "late":
+						return 1m;
+					case "half-day":
+					case "halfday":
+						return 0.5m;
+					case "absent":
+					case "leave":
+						return 0m;
+					default:
+						return 0m;
+				}
+			}
 
 			int createdCount = 0;
 			foreach (var emp in activeEmployees)
@@ -112,15 +152,27 @@ namespace EmployeeAttendance.Services
 				}
 
 				structures.TryGetValue(emp.Id, out var structure);
+				attendanceByEmployee.TryGetValue(emp.Id, out var records);
+
+				decimal attendanceUnits = 0m;
+				if (records != null)
+				{
+					foreach (var rec in records)
+					{
+						attendanceUnits += MapStatusToUnit(rec.Status);
+					}
+				}
+
+				var ratio = Math.Min(attendanceUnits / workingDays, 1m);
 
 				var payroll = new Payroll
 				{
 					EmployeeId = emp.Id,
 					Year = year,
 					Month = month,
-					BasicSalary = structure?.Basic ?? 0m,
-					Allowances = (structure?.Hra ?? 0m) + (structure?.DearnessAllowance ?? 0m) + (structure?.OtherAllowances ?? 0m),
-					Deductions = structure?.Deductions ?? 0m,
+					BasicSalary = (structure?.Basic ?? 0m) * ratio,
+					Allowances = ((structure?.Hra ?? 0m) + (structure?.DearnessAllowance ?? 0m) + (structure?.OtherAllowances ?? 0m)) * ratio,
+					Deductions = (structure?.Deductions ?? 0m) * ratio,
 					Status = "Pending",
 					PaymentDate = null
 				};
