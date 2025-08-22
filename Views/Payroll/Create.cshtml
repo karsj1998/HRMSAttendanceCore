@@ -1,0 +1,105 @@
+@model EmployeeAttendance.Models.Payroll
+@{
+	ViewData["Title"] = "Create Payroll";
+	var employees = ViewBag.Employees as IEnumerable<EmployeeAttendance.Models.Employee>;
+}
+<div class="row justify-content-center">
+	<div class="col-md-8">
+		<div class="card">
+			<div class="card-header">
+				<h3 class="card-title mb-0"><i class="fas fa-plus text-primary me-2"></i>Create Payroll</h3>
+			</div>
+			<div class="card-body">
+				<form asp-action="Create">
+					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="mb-3">
+								<label asp-for="EmployeeId" class="form-label">Employee</label>
+								<select asp-for="EmployeeId" class="form-select" required>
+									<option value="">Select Employee</option>
+									@if (employees != null)
+									{
+										foreach (var e in employees)
+										{
+											<option value="@e.Id">@e.FullName (@e.EmployeeId)</option>
+										}
+									}
+								</select>
+								<span asp-validation-for="EmployeeId" class="text-danger"></span>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="mb-3">
+								<label asp-for="Year" class="form-label">Year</label>
+								<input asp-for="Year" type="number" class="form-control" min="2000" max="2100" required />
+								<span asp-validation-for="Year" class="text-danger"></span>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="mb-3">
+								<label asp-for="Month" class="form-label">Month</label>
+								<input asp-for="Month" type="number" class="form-control" min="1" max="12" required />
+								<span asp-validation-for="Month" class="text-danger"></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-4">
+							<div class="mb-3">
+								<label asp-for="BasicSalary" class="form-label">Basic Salary</label>
+								<input asp-for="BasicSalary" type="number" step="0.01" min="0" class="form-control" required />
+								<span asp-validation-for="BasicSalary" class="text-danger"></span>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="mb-3">
+								<label asp-for="Allowances" class="form-label">Allowances</label>
+								<input asp-for="Allowances" type="number" step="0.01" min="0" class="form-control" />
+								<span asp-validation-for="Allowances" class="text-danger"></span>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="mb-3">
+								<label asp-for="Deductions" class="form-label">Deductions</label>
+								<input asp-for="Deductions" type="number" step="0.01" min="0" class="form-control" />
+								<span asp-validation-for="Deductions" class="text-danger"></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<div class="mb-3">
+								<label asp-for="PaymentDate" class="form-label">Payment Date</label>
+								<input asp-for="PaymentDate" type="date" class="form-control" />
+								<span asp-validation-for="PaymentDate" class="text-danger"></span>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="mb-3">
+								<label asp-for="Status" class="form-label">Status</label>
+								<select asp-for="Status" class="form-select">
+									<option>Pending</option>
+									<option>Paid</option>
+									<option>On Hold</option>
+								</select>
+								<span asp-validation-for="Status" class="text-danger"></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="d-flex justify-content-between">
+						<a asp-action="Index" class="btn btn-secondary"><i class="fas fa-arrow-left me-2"></i>Back to List</a>
+						<button type="submit" class="btn btn-primary"><i class="fas fa-save me-2"></i>Create Payroll</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+@section Scripts {
+	@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -12,6 +12,7 @@ namespace EmployeeAttendance.Data
 
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Attendance> Attendances { get; set; }
+        public DbSet<Payroll> Payrolls { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -38,6 +39,21 @@ namespace EmployeeAttendance.Data
                 entity.HasOne(e => e.Employee)
                       .WithMany(e => e.Attendances)
                       .HasForeignKey(e => e.EmployeeId)
+                      .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            // Configure Payroll entity
+            modelBuilder.Entity<Payroll>(entity =>
+            {
+                entity.HasKey(p => p.Id);
+                entity.HasIndex(p => new { p.EmployeeId, p.Year, p.Month }).IsUnique();
+                entity.Property(p => p.BasicSalary).HasColumnType("decimal(18,2)");
+                entity.Property(p => p.Allowances).HasColumnType("decimal(18,2)");
+                entity.Property(p => p.Deductions).HasColumnType("decimal(18,2)");
+
+                entity.HasOne(p => p.Employee)
+                      .WithMany()
+                      .HasForeignKey(p => p.EmployeeId)
                       .OnDelete(DeleteBehavior.Cascade);
             });
 
