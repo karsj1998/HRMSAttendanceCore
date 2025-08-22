@@ -14,6 +14,9 @@ namespace EmployeeAttendance.Data
         public DbSet<Attendance> Attendances { get; set; }
         public DbSet<Payroll> Payrolls { get; set; }
         public DbSet<SalaryStructure> SalaryStructures { get; set; }
+        public DbSet<LeaveType> LeaveTypes { get; set; }
+        public DbSet<LeaveBalance> LeaveBalances { get; set; }
+        public DbSet<LeaveRequest> LeaveRequests { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -72,6 +75,49 @@ namespace EmployeeAttendance.Data
                       .HasForeignKey(s => s.EmployeeId)
                       .OnDelete(DeleteBehavior.Cascade);
                 entity.HasIndex(s => new { s.EmployeeId, s.EffectiveFrom });
+            });
+
+            // Configure LeaveType
+            modelBuilder.Entity<LeaveType>(entity =>
+            {
+                entity.HasKey(l => l.Id);
+                entity.Property(l => l.Name).IsRequired().HasMaxLength(50);
+                entity.HasIndex(l => l.Name).IsUnique();
+                entity.Property(l => l.AnnualAllocation).HasColumnType("decimal(18,2)");
+            });
+
+            // Configure LeaveBalance
+            modelBuilder.Entity<LeaveBalance>(entity =>
+            {
+                entity.HasKey(b => b.Id);
+                entity.HasIndex(b => new { b.EmployeeId, b.LeaveTypeId, b.Year }).IsUnique();
+                entity.Property(b => b.Remaining).HasColumnType("decimal(18,2)");
+                entity.HasOne(b => b.Employee)
+                      .WithMany()
+                      .HasForeignKey(b => b.EmployeeId)
+                      .OnDelete(DeleteBehavior.Cascade);
+                entity.HasOne(b => b.LeaveType)
+                      .WithMany()
+                      .HasForeignKey(b => b.LeaveTypeId)
+                      .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            // Configure LeaveRequest
+            modelBuilder.Entity<LeaveRequest>(entity =>
+            {
+                entity.HasKey(r => r.Id);
+                entity.Property(r => r.Status).HasMaxLength(20);
+                entity.Property(r => r.Reason).HasMaxLength(500);
+                entity.Property(r => r.ApprovedBy).HasMaxLength(100);
+                entity.Property(r => r.Days).HasColumnType("decimal(18,2)");
+                entity.HasOne(r => r.Employee)
+                      .WithMany()
+                      .HasForeignKey(r => r.EmployeeId)
+                      .OnDelete(DeleteBehavior.Cascade);
+                entity.HasOne(r => r.LeaveType)
+                      .WithMany()
+                      .HasForeignKey(r => r.LeaveTypeId)
+                      .OnDelete(DeleteBehavior.Cascade);
             });
 
             // Seed data
