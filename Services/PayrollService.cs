@@ -89,11 +89,18 @@ namespace EmployeeAttendance.Services
 
 		public async Task<int> GenerateMonthlyAsync(int year, int month)
 		{
-			// Get active employees
+			var periodDate = new DateTime(year, month, 1);
 			var activeEmployees = await _context.Employees
 				.Where(e => e.IsActive)
 				.Select(e => new { e.Id })
 				.ToListAsync();
+
+			// Preload latest effective salary structures up to the period for all active employees
+			var structures = await _context.SalaryStructures
+				.Where(s => s.EffectiveFrom <= periodDate)
+				.GroupBy(s => s.EmployeeId)
+				.Select(g => g.OrderByDescending(s => s.EffectiveFrom).First())
+				.ToDictionaryAsync(s => s.EmployeeId, s => s);
 
 			int createdCount = 0;
 			foreach (var emp in activeEmployees)
@@ -104,14 +111,16 @@ namespace EmployeeAttendance.Services
 					continue;
 				}
 
+				structures.TryGetValue(emp.Id, out var structure);
+
 				var payroll = new Payroll
 				{
 					EmployeeId = emp.Id,
 					Year = year,
 					Month = month,
-					BasicSalary = 0m,
-					Allowances = 0m,
-					Deductions = 0m,
+					BasicSalary = structure?.Basic ?? 0m,
+					Allowances = (structure?.Hra ?? 0m) + (structure?.DearnessAllowance ?? 0m) + (structure?.OtherAllowances ?? 0m),
+					Deductions = structure?.Deductions ?? 0m,
 					Status = "Pending",
 					PaymentDate = null
 				};

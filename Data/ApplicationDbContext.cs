@@ -13,6 +13,7 @@ namespace EmployeeAttendance.Data
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Attendance> Attendances { get; set; }
         public DbSet<Payroll> Payrolls { get; set; }
+        public DbSet<SalaryStructure> SalaryStructures { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -55,6 +56,22 @@ namespace EmployeeAttendance.Data
                       .WithMany()
                       .HasForeignKey(p => p.EmployeeId)
                       .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            // Configure SalaryStructure entity
+            modelBuilder.Entity<SalaryStructure>(entity =>
+            {
+                entity.HasKey(s => s.Id);
+                entity.Property(s => s.Basic).HasColumnType("decimal(18,2)");
+                entity.Property(s => s.Hra).HasColumnType("decimal(18,2)");
+                entity.Property(s => s.DearnessAllowance).HasColumnType("decimal(18,2)");
+                entity.Property(s => s.OtherAllowances).HasColumnType("decimal(18,2)");
+                entity.Property(s => s.Deductions).HasColumnType("decimal(18,2)");
+                entity.HasOne(s => s.Employee)
+                      .WithMany()
+                      .HasForeignKey(s => s.EmployeeId)
+                      .OnDelete(DeleteBehavior.Cascade);
+                entity.HasIndex(s => new { s.EmployeeId, s.EffectiveFrom });
             });
 
             // Seed data
