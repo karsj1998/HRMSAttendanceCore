@@ -12,5 +12,6 @@ namespace EmployeeAttendance.Services
 		Task<Payroll> UpdateAsync(Payroll payroll);
 		Task DeleteAsync(int id);
 		Task<bool> IsDuplicateAsync(int employeeId, int year, int month, int? excludeId = null);
+		Task<int> GenerateMonthlyAsync(int year, int month);
 	}
 }

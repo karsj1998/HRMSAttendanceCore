@@ -86,5 +86,46 @@ namespace EmployeeAttendance.Services
 			}
 			return await query.AnyAsync();
 		}
+
+		public async Task<int> GenerateMonthlyAsync(int year, int month)
+		{
+			// Get active employees
+			var activeEmployees = await _context.Employees
+				.Where(e => e.IsActive)
+				.Select(e => new { e.Id })
+				.ToListAsync();
+
+			int createdCount = 0;
+			foreach (var emp in activeEmployees)
+			{
+				bool exists = await IsDuplicateAsync(emp.Id, year, month);
+				if (exists)
+				{
+					continue;
+				}
+
+				var payroll = new Payroll
+				{
+					EmployeeId = emp.Id,
+					Year = year,
+					Month = month,
+					BasicSalary = 0m,
+					Allowances = 0m,
+					Deductions = 0m,
+					Status = "Pending",
+					PaymentDate = null
+				};
+
+				_context.Set<Payroll>().Add(payroll);
+				createdCount++;
+			}
+
+			if (createdCount > 0)
+			{
+				await _context.SaveChangesAsync();
+			}
+
+			return createdCount;
+		}
 	}
 }
